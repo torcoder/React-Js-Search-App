@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+}
+.title {
+  text-align: center;
+  margin: 1rem 0;
+}
+.searchBar {
+  display: flex;
+  justify-content: center;
+}
+.search {
+  width: 300px;
+  padding: 0.6rem;
+  border-radius: 4px;
+  border: 1px solid #cecece;
+  box-shadow: 0px 2px 4px #cecece;
+}
+.search:hover {
+  box-shadow: 2px 4px 6px #cecece;
+}
+.search:focus {
+  outline: none;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 2rem auto;
+  max-width: 1280px;
+  width: 100%;
+}
+.item {
+  height: auto;
+  border: 1px solid #81817c56;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.item img {
+  width: 320px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.item .gender {
+  background-color: rgb(58, 135, 207);
+  width: min-content;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ffffff;
+  margin: 1rem 0.4rem;
+}
+.item .gender.pink {
+  background-color: blueviolet;
+}
+.item .name {
+  margin: 1rem 0.4rem;
+  cursor: pointer;
+}
+.name span {
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+}
+.name span:hover {
+  text-decoration-color: rgb(18, 167, 212);
+}
+.item .balance {
+  margin: 1rem 0.4rem;
+}
+.item .company {
+  margin: 1rem 0.4rem;
+}
